@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1>🌤️ Weather App</h1>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="cityInput"placeholder="Masukkan nama kota...">
+      <button type="submit">Cari 🔍</button>
+    </form>
+
+    <!-- Temperature Unit - BONUS -->
+    <div class="unit-row">
+      <span>Satuan suhu:</span>
+      <button type="button" id="unitButton">°C</button>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading" class="hidden">
+      ⏳ Memuat data...
+    </div>
+
+    <!-- Error Message -->
+    <div id="error" class="hidden"></div>
+
+    <!-- Weather Result -->
+    <div id="weatherResult" class="hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" alt="weather icon">
+      <p id="temperature" class="temp"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+    </div>
+
+    <!-- 5-Day Forecast - BONUS -->
+    <div id="forecast" class="hidden">
+      <h3>📅 Forecast 5 Hari</h3>
+      <div id="forecastList"></div>
+    </div>
+
+    <!-- Search History - BONUS -->
+    <div id="history" class="hidden">
+      <h3>🕘 Riwayat Pencarian</h3>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
